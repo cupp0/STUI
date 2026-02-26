@@ -1,2 +1,3 @@
 stockfish/*.wasm
 stockfish/*.js
+.DS_Store
