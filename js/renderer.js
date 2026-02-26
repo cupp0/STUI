@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export class Board {
   constructor(controller) {
     this.controller = controller;
@@ -79,4 +80,26 @@ export class Board {
         };
         return map[piece];
     }
+=======
+export class Renderer {
+  constructor(controller) {
+    this.controller = controller;
+  }
+
+  draw() {
+    background(240);
+
+    const moves = this.controller.getMoves();
+
+    textSize(18);
+    textFont("monospace");
+
+    let y = 30;
+
+    for (let i = 0; i < moves.length; i++) {
+      text(`${i + 1}. ${moves[i]}`, 30, y);
+      y += 24;
+    }
+  }
+>>>>>>> ef8a5a91835a17bf5e5495322f78d55198f771c9
 }
